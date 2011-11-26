@@ -7,7 +7,7 @@ object MyProject extends Build {
   val buildVersion      = "0.1"
   val buildScalaVersion = "2.9.1"
 
-  lazy val projet = Project (buildName, file("."), settings = mySettings)
+  lazy val project = Project (buildName, file("."), settings = mySettings)
 
   val mySettings = Defaults.defaultSettings ++ Seq (
     organization := buildOrganization,
