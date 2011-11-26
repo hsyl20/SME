@@ -1,0 +1,19 @@
+Scala Monkey Engine (wrapper for jMonkeyEngine)
+===============================================
+
+1) Installation
+
+Execute install_jME.sh
+
+or
+
+Copy jME's jars into lib/
+Copy jME's town.zip into data/
+
+2) Execution
+
+Start sbt:
+$ sbt
+
+Run one example:
+sbt> run-hello-physics
