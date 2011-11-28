@@ -53,6 +53,10 @@ class HelloAssets extends SimpleApplication {
 
 object HelloAssets {
   def main(args:Array[String]): Unit = {
+
+    import java.util.logging.{Logger,Level}
+    Logger.getLogger("").setLevel(Level.WARNING);
+
     val app = new HelloAssets
     app.start
   }

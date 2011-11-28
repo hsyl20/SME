@@ -48,6 +48,10 @@ class HelloEffects extends SimpleApplication {
 
 object HelloEffects {
   def main(args:Array[String]): Unit = {
+
+    import java.util.logging.{Logger,Level}
+    Logger.getLogger("").setLevel(Level.WARNING);
+
     val app = new HelloEffects
     app.start
   }

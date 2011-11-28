@@ -73,6 +73,10 @@ class HelloMaterial extends SimpleApplication {
 
 object HelloMaterial {
   def main(args:Array[String]): Unit = {
+
+    import java.util.logging.{Logger,Level}
+    Logger.getLogger("").setLevel(Level.WARNING);
+
     val app = new HelloMaterial
     app.start
   }

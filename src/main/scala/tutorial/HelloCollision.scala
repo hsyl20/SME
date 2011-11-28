@@ -136,6 +136,10 @@ class HelloCollision extends SimpleApplication with ActionListener {
 
 object HelloCollision {
   def main(args:Array[String]): Unit = {
+
+    import java.util.logging.{Logger,Level}
+    Logger.getLogger("").setLevel(Level.WARNING);
+
     val app = new HelloCollision
     app.start
   }

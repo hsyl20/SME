@@ -83,6 +83,10 @@ class HelloAnimation extends SimpleApplication with AnimEventListener {
 
 object HelloAnimation {
   def main(args:Array[String]): Unit = {
+
+    import java.util.logging.{Logger,Level}
+    Logger.getLogger("").setLevel(Level.WARNING);
+
     val app = new HelloAnimation
     app.start
   }

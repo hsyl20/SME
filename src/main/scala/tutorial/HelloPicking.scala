@@ -145,6 +145,10 @@ class HelloPicking extends SimpleApplication {
 
 object HelloPicking {
   def main(args:Array[String]): Unit = {
+
+    import java.util.logging.{Logger,Level}
+    Logger.getLogger("").setLevel(Level.WARNING);
+
     val app = new HelloPicking
     app.start
   }

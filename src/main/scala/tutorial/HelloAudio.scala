@@ -75,6 +75,10 @@ class HelloAudio extends SimpleApplication {
 
 object HelloAudio {
   def main(args:Array[String]): Unit = {
+
+    import java.util.logging.{Logger,Level}
+    Logger.getLogger("").setLevel(Level.WARNING);
+
     val app = new HelloAudio
     app.start
   }

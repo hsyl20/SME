@@ -24,6 +24,10 @@ class HelloSimpleApplication extends SimpleApplication {
 
 object HelloSimpleApplication {
   def main(args:Array[String]): Unit = {
+
+    import java.util.logging.{Logger,Level}
+    Logger.getLogger("").setLevel(Level.WARNING);
+
     val app = new HelloSimpleApplication
     app.start
   }

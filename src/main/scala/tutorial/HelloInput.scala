@@ -75,6 +75,10 @@ class HelloInput extends SimpleApplication {
 
 object HelloInput {
   def main(args:Array[String]): Unit = {
+
+    import java.util.logging.{Logger,Level}
+    Logger.getLogger("").setLevel(Level.WARNING);
+
     val app = new HelloInput
     app.start
   }
