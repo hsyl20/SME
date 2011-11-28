@@ -42,15 +42,9 @@ object MyProject extends Build {
   )
 
   val myResolvers = Seq(
-    "Sun Maven2 Repo" at "http://download.java.net/maven/2",
-    "Oracle Maven2 Repo" at "http://download.oracle.com/maven",
-    "Scala-Tools Snapshots" at "http://scala-tools.org/repo-snapshots"
   )
 
   val myDependencies = Seq (
-    "org.scala-lang" % "jline" % buildScalaVersion,
-    "org.scalaz" %% "scalaz-full" % "6.0.3",
-    "org.scalatest" %% "scalatest" % "1.6.1"
   )
 
   def nativeJavaLibraryPath: String = {
